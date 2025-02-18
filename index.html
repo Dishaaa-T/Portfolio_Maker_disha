@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Creator</title>
+    <title>DIsha Portfolio Creator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="style3.css">
@@ -53,7 +53,6 @@
             <h6 style="text-align: left; padding-left: 100px;">TRANSFORMING DESIGNS AT:</h6>
             <div class="marquee">
                 <div class="marquee-content">
-                    
                     <img src="assets/Discord-logo-removebg-preview.png" alt="">
                     <img src="assets/DropBox-logo-removebg-preview.png" alt="">
                     <img src="assets/OrangeTheory-removebg-preview.png" alt="">
@@ -69,8 +68,8 @@
                     <img src="assets/Discord-logo-removebg-preview.png" alt="">
                     <img src="assets/DropBox-logo-removebg-preview.png" alt="">
                     <img src="assets/OrangeTheory-removebg-preview.png" alt="">
-                    <img src="assets/Screenshot_2025-02-15_202347-removebg-preview.png" alt="">
-                    <img src="assets/Screenshot_2025-02-15_202547-removebg-preview.png" alt="">
+                    <img src="assets/monday-logo.png" alt="">
+                    <img src="assets/greenhouse-logo.png" alt="">
                     <img src="assets/phillips.png" alt="">
                     <img src="assets/vicelogo.png" alt="">
                     <img src="assets/IDEO.png" alt="">
@@ -126,7 +125,20 @@
                 <br>
             </div>
     </div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const marquee = document.querySelector(".marquee");
+    const content = document.querySelector(".marquee-content");
 
+    // Clone the content for a seamless effect
+    const clone = content.cloneNode(true);
+    marquee.appendChild(clone);
+
+    // Ensure animation restarts smoothly
+    marquee.style.setProperty("--marquee-width", `${content.scrollWidth}px`);
+});
+
+</script>
 </div>
 
 <div class="page3">

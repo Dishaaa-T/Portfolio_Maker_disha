@@ -95,12 +95,16 @@ body{
 
 .hero {
     display: flex;
+    justify-content: center;
+    min-height: 100vh;;
+    padding: 2rem;;
+    z-index: 1;
+    text-align: center;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    min-height: 100vh;
-    text-align: center;
-    padding: 2rem;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
 }
 
@@ -109,6 +113,8 @@ body{
     line-height: 1.2;
     margin-bottom: 1.5rem;
     max-width: 800px;
+    text-align: center;
+    align-items: center;
 }
 
 .hero p {
@@ -116,6 +122,8 @@ body{
     color: #888;
     max-width: 600px;
     margin-bottom: 2rem;
+    text-align: center;
+    align-items: center;
 }
 
 .portfolio-images {
@@ -162,19 +170,6 @@ body{
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
     max-width: 280px;
   
-}
-
-.hero {
-    z-index: 2;
-    text-align: center;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    position: relative;
 }
 
 .hero-left{
